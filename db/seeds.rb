@@ -28,5 +28,5 @@ event3 = Event.create!(name: "Eventname12", description: "A description for an e
                       includes_food: true, includes_drinks: false, user: matt, categories: [sleek_and_sophisticated])
 
 photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/du5cam6dp/image/upload/v1504773176/sample.jpg", event: event1)
-photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/du5cam6dp/image/upload/v1504773176/sample.jpg", event: event2)
+photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/du5cam6dp/image/upload/v1504773176/sample.jpg", event: event1)
 photo3 = Photo.create!(remote_image_url: "http://res.cloudinary.com/du5cam6dp/image/upload/v1504773176/sample.jpg", event: event3)
