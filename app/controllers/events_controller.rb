@@ -8,6 +8,7 @@ class EventsController < ApplicationController
 
   def show
     @categories = @event.categories
+    @photos = @room.photos
   end
 
   def new
