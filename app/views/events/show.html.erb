@@ -1,0 +1,37 @@
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= @event.name %></div>
+
+  <div class="panel-body">
+
+
+
+    <!-- Main Info -->
+    <h4>Main Info</h4>
+    <ul>
+      <li><%= @event.name %></li>
+      <li><%= @event.location %></li>
+      <li><%= @event.price %></li>
+      <li><%= @event.capacity %></li>
+      <li><%= @event.includes_food %></li>
+      <li><%= @event.includes_drinks %></li>
+      <li><%= @event.starts_at %></li>
+      <li><%= @event.ends_at %></li>
+      <li><%= @event.active %></li>
+      <li><%= @event.description %></li>
+    </ul>
+    <!-- About -->
+    <h4>About</h4>
+    <p><%= @event.description %></p>
+
+    <!-- Amenities -->
+
+    <h4>Categories</h4>
+    <% @categories.each do |category| %>
+    <span class="label label-success"><%= category.name %></span>
+    <% end %>
+
+  </div>
+
+</div>
+
+<%= link_to "Back", events_path, class: "btn btn-default" %>
